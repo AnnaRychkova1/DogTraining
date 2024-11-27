@@ -25,7 +25,7 @@ $("#scrollTopBtn").click(function () {
 class RandomImageGenerator {
   constructor(imageSrcArray, targetElementSelector) {
     this.imageSrcArray = imageSrcArray;
-    this.imageDensity = 0.00002;
+    this.imageDensity = 0.00001;
     this.minDistancePercent = 10;
     this.positions = [];
     this.targetElement = $(targetElementSelector);
