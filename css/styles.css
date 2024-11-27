@@ -1,9 +1,4 @@
 @import url("header-footer.css");
-@import url("home.css");
-@import url("we-offer.css");
-@import url("testimonials.css");
-@import url("about.css");
-@import url("contacts.css");
 
 :root {
   --light-background: #fffdee;
