@@ -1,0 +1,40 @@
+/* We Offer Page Styles */
+.offer-container{
+    padding-top: 200px; 
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.we-offer-title {
+    color: #5b81a6;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .offer-section {
+    margin-bottom: 2rem;
+  }
+  
+  .offer-subtitle {
+    color: #f65451;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .offer-section p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .offer-section ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
+  
+  .offer-section ul li {
+    margin-bottom: 0.5rem;
+  }
+  
