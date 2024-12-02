@@ -10,6 +10,7 @@
   color: #5b81a6;
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 /* About content: flexbox layout for the image and text */
@@ -52,7 +53,7 @@
 }
 
 .about-text p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
 }
 
@@ -69,6 +70,6 @@
   }
 
   .about-text {
-    text-align: center;
+    text-align: justify;
   }
 }
