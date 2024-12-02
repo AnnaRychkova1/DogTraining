@@ -1,12 +1,4 @@
-.testim-descr {
-  /* display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden; */
-}
-
 .testim-container {
-  padding-top: 145px;
   position: relative;
   z-index: 1;
   overflow: hidden;

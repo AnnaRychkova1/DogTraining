@@ -18,6 +18,7 @@
   background-color: var(--light-background);
   color: var(--main-text-color);
   font-family: "Roboto", sans-serif;
+  min-height: 100vh;
 }
 
 h2 {
@@ -29,28 +30,10 @@ h3 {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 140px;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   background-color: var(--light-background);
-}
-
-/* Decorated text */
-.text-animation {
-  background: linear-gradient(to right, rgb(67, 124, 243), rgb(69, 245, 125));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: fade 1s ease-in 1s;
-  text-align: justify;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Styles for Random image */

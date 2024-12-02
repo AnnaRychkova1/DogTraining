@@ -54,7 +54,7 @@ class RandomImageGenerator {
 
   calculateImageCount() {
     const elementArea = this.mainRect.width * this.mainRect.height;
-    const maxImageCount = 30;
+    const maxImageCount = 50;
     const calculatedCount = Math.floor(elementArea * this.imageDensity);
     const imageCount = Math.min(Math.max(calculatedCount, 1), maxImageCount);
     return imageCount;
