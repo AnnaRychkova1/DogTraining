@@ -31,7 +31,6 @@ class RandomImageGenerator {
     this.targetElement = $(targetElementSelector);
 
     this.updateDimensions();
-
     $(window).resize(() => {
       this.updateDimensions();
       this.regenerateImages();
@@ -52,9 +51,10 @@ class RandomImageGenerator {
 
     this.imageCount = this.calculateImageCount();
   }
+
   calculateImageCount() {
     const elementArea = this.mainRect.width * this.mainRect.height;
-    const maxImageCount = 100;
+    const maxImageCount = 30;
     const calculatedCount = Math.floor(elementArea * this.imageDensity);
     const imageCount = Math.min(Math.max(calculatedCount, 1), maxImageCount);
     return imageCount;
