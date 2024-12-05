@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8"/>
-    <link
-            rel="icon"
-            type="image/svg+xml"
-            href="images/header-footer/favicon.png"
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="images/main/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find out how to get in touch with Mattias, an experienced dog trainer, and discuss training services or ask questions about your dog's needs."
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
     <title>Contacts</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,27 +18,28 @@
     />
     <!-- Bootstrap styles -->
     <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-            crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
   </head>
   <body>
     <header class="my-header d-flex justify-content-between">
-      <div>
+      <div class="logo-container">
         <a href="index.html">
           <img
             src="images/header-footer/logo.png"
-            alt="logo"
-            width="156"
-            height="156"
+            class="logo-img"
+            alt="Logo Attaboy Dog Training"
+            loading="lazy"
           />
         </a>
-    </div>
-    <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+      </div>
+      <nav class="navbar navbar-expand-lg d-flex justify-content-center">
         <div class="container-fluid d-flex justify-content-end">
           <button
             class="navbar-toggler"
@@ -96,153 +95,135 @@
                   class="active nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
                   href="contacts.html"
                 >
-                    <li class="nav-item">
-                        <a
-                                class="nav-link rounded-5 px-5 py-2 fw-bold"
-                                aria-current="page"
-                                href="index.html"
-                        >Home</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a
-                                class="nav-link rounded-5 px-5 py-2 fw-bold"
-                                href="we-offer.html"
-                        >We offer</a
-                        >
-                    </li>
-                    <li class="nav-item">
-                        <a
-                                class="nav-link rounded-5 px-5 py-2 fw-bold"
-                                href="breeds.html"
-                        >
-                            Breeds
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a
-                                class="nav-link rounded-5 px-5 py-2 fw-bold"
-                                href="about.html"
-                        >
-                            About us
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a
-                                class="active nav-link rounded-5 px-5 py-2 fw-bold"
-                                href="contacts.html"
-                        >
-                            Contacts
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                  Contacts
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-</header>
-<body>
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Contact Us</h2>
-    <form id="contactForm" class="needs-validation" novalidate>
-        <div class="row mb-3">
+      </nav>
+    </header>
+    <main>
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="row mb-3">
             <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name</label>
-                <input
-                        type="text"
-                        class="form-control"
-                        id="firstName"
-                        placeholder="Enter your first name"
-                        required
-                />
-                <div class="invalid-feedback">Please enter a valid first name.</div>
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Enter your first name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid first name.
+              </div>
             </div>
             <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name</label>
-                <input
-                        type="text"
-                        class="form-control"
-                        id="lastName"
-                        placeholder="Enter your last name"
-                        required
-                />
-                <div class="invalid-feedback">Please enter a valid last name.</div>
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Enter your last name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid last name.
+              </div>
             </div>
-        </div>
-        <div class="row mb-3">
+          </div>
+          <div class="row mb-3">
             <div class="col-md-6">
-                <label for="dogName" class="form-label">Dog's Name</label>
-                <input
-                        type="text"
-                        class="form-control"
-                        id="dogName"
-                        placeholder="Enter dog's name"
-                        required
-                />
-                <div class="invalid-feedback">Please enter a valid dog's name.</div>
-            </div>
-            <div class="col-md-6">
-                <label for="dogBreed" class="form-label">Dog's Breed</label>
-                <input
-                        type="text"
-                        class="form-control"
-                        id="dogBreed"
-                        placeholder="Enter dog's breed"
-                        required
-                />
-                <div class="invalid-feedback">Please enter a valid dog breed.</div>
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-md-6">
-                <label for="dogAge" class="form-label">Dog's Age</label>
-                <input
-                        type="number"
-                        class="form-control"
-                        id="dogAge"
-                        placeholder="Enter dog's age (in years)"
-                        min="0"
-                        max="20"
-                        required
-                />
-                <div class="invalid-feedback">Dog's age must be between 0 and 20 years.</div>
+              <label for="dogName" class="form-label">Dog's Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="dogName"
+                placeholder="Enter dog's name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid dog's name.
+              </div>
             </div>
             <div class="col-md-6">
-                <label for="phoneNumber" class="form-label">Phone Number</label>
-                <input
-                        type="tel"
-                        class="form-control"
-                        id="phoneNumber"
-                        placeholder="Enter your phone number"
-                        required
-                />
-                <div class="invalid-feedback">Please enter a valid phone number.</div>
+              <label for="dogBreed" class="form-label">Dog's Breed</label>
+              <input
+                type="text"
+                class="form-control"
+                id="dogBreed"
+                placeholder="Enter dog's breed"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid dog breed.
+              </div>
             </div>
-        </div>
-        <div class="mb-3">
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="dogAge" class="form-label">Dog's Age</label>
+              <input
+                type="number"
+                class="form-control"
+                id="dogAge"
+                placeholder="Enter dog's age (in years)"
+                min="0"
+                max="20"
+                required
+              />
+              <div class="invalid-feedback">
+                Dog's age must be between 0 and 20 years.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                placeholder="Enter your phone number"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid phone number.
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
             <label for="email" class="form-label">Email Address</label>
             <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="Enter your email"
-                    required
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
             />
-            <div class="invalid-feedback">Please enter a valid email address.</div>
-        </div>
-        <div class="d-flex justify-content-center">
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
             <button type="submit" class="btn btn-primary px-5">Submit</button>
-        </div>
-    </form>
-    <div class="mt-4 text-center">
-        <p>
+          </div>
+        </form>
+        <div class="mt-4 text-center">
+          <p>
             You can also contact us via Instagram or phone:
-            <a href="https://www.instagram.com/attaboy_dogtraining/" target="_blank">Instagram</a> |
+            <a
+              href="https://www.instagram.com/attaboy_dogtraining/"
+              target="_blank"
+              >Instagram</a
+            >
+            |
             <a href="tel:+353892188141">+353 (89) 218 8141</a>
-        </p>
-    </div>
-</div>
-<script src="js/contact.js"></script>
-<!-- Custom js -->
+          </p>
+        </div>
+      </div>
+    </main>
     <footer class="my-footer p-4">
       <div class="footer-left">
         <a
@@ -253,17 +234,22 @@
         >
           <img
             src="images/header-footer/Instagram_icon.png"
-            alt="Instagram link"
-            width="64px"
+            alt="Link to Attaboy Dog Training Instagram page"
+            width="64"
+            loading="lazy"
           />
         </a>
       </div>
       <div class="footer-right">
         <ul class="footer-list">
-          <a href="testimonials.html" class="footer-link">Testimonials</a>
-          <a href="we-offer.html" class="footer-link">Services I Offer</a>
-          <a href="contacts.html" class="footer-link">Contact me</a>
-          <a href="about.html" class="footer-link">About me</a>
+          <li>
+            <a href="testimonials.html" class="footer-link">Testimonials</a>
+          </li>
+          <li>
+            <a href="we-offer.html" class="footer-link">Services I Offer</a>
+          </li>
+          <li><a href="contacts.html" class="footer-link">Contact me</a></li>
+          <li><a href="about.html" class="footer-link">About me</a></li>
         </ul>
         <div>
           <span> &copy; 2024 Attaboy Dog Training. All rights reserved. </span>
@@ -293,11 +279,6 @@
     ></script>
     <!-- Custom js -->
     <script defer src="js/index.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
-
-
-
-
-
-

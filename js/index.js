@@ -64,6 +64,8 @@ class RandomImageGenerator {
     const randomIndex = Math.floor(Math.random() * this.imageSrcArray.length);
     const $img = $("<img>")
       .attr("src", this.imageSrcArray[randomIndex])
+      .attr("loading", "lazy")
+      .attr("alt", "Dog paws")
       .addClass("random-image");
     return $img;
   }

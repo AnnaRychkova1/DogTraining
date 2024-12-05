@@ -95,10 +95,10 @@ function renderTestimonials(testimonials) {
     const li = $("<li></li>").addClass("testim-custom-item");
     li.html(`
       <div class="testim-img-container">
-        <img src="${testimonial.imageTestimonial}" alt="${testimonial.altTestimonial}" class="testim-img" data-id="${testimonial.id}">
+        <img src="${testimonial.imageTestimonial}" alt="${testimonial.altTestimonial}" class="testim-img" data-id="${testimonial.id}" loading="lazy">
       </div>
       <div class="pet">
-        <img src="${testimonial.imagePet}" alt="${testimonial.altPet}" class="testim-pet-img visually-hidden" data-id="${testimonial.id}">
+        <img src="${testimonial.imagePet}" alt="${testimonial.altPet}" class="testim-pet-img visually-hidden" data-id="${testimonial.id}" loading="lazy">
       </div>
     `);
 
@@ -135,9 +135,9 @@ function openModal(clickedIndex, testimonials) {
 
     const carouselItem = `
         <div class="carousel-item ${activeClass}">
-          <img src="${testimonial.imageTestimonial}" alt="${testimonial.altTestimonial}" class="d-block w-100">
+          <img src="${testimonial.imageTestimonial}" alt="${testimonial.altTestimonial}" class="d-block w-100" loading="lazy">
            <div class="testim-img-circle-container">
-            <img src="${testimonial.imagePet}" alt="${testimonial.altPet}" class="testim-img-circle">
+            <img src="${testimonial.imagePet}" alt="${testimonial.altPet}" class="testim-img-circle" loading="lazy">
           </div> 
         </div>       
       `;

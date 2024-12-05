@@ -3,11 +3,12 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 
 /* About Me title: styles the title text */
 .about-title {
-  color: #5b81a6;
+  color: var(--blue-text-color);
   margin-bottom: 2rem;
   text-align: center;
   font-weight: bold;
@@ -16,23 +17,23 @@
 /* About content: flexbox layout for the image and text */
 .about-content {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  max-width: 90%;
   margin: 0 auto;
 }
 
 /* Image styling: ensures the image is positioned and styled correctly */
 .about-image {
-  flex: 0 0 30%;
-  margin-right: auto;
+  margin: 0 auto 1.5rem auto;
+  width: 80%;
 }
 
 .about-image img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 20px rgba(185, 197, 233, 0.5);
   display: block;
 }
 
@@ -41,15 +42,19 @@
   flex: 1;
   text-align: left;
   line-height: 1.6;
-  color: #333;
   text-align: justify;
 }
 
 .about-subtitle {
-  color: #f65451;
+  color: var(--accent-color);
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
+  text-align: center;
+}
+
+.about-first-subtitle {
+  margin-top: 0;
 }
 
 .about-text p {
@@ -57,19 +62,19 @@
   line-height: 1.6;
 }
 
-/* Responsive design: adjusts layout for smaller screens */
-@media (max-width: 768px) {
+/* Responsive design: adjusts layout for bigger screens */
+@media (min-width: 768px) {
   .about-content {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
   }
 
   .about-image {
-    margin: 0 auto 1.5rem auto;
-    width: 80%;
+    flex: 0 0 30%;
+    margin-right: auto;
   }
 
-  .about-text {
-    text-align: justify;
+  .about-subtitle {
+    text-align: left;
   }
 }

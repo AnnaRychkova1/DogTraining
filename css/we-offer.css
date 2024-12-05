@@ -6,7 +6,7 @@
 }
 
 .we-offer-title {
-  color: #5b81a6;
+  color: var(--blue-text-color);
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
@@ -17,7 +17,7 @@
 }
 
 .offer-subtitle {
-  color: #f65451;
+  color: var(--accent-color);
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   text-align: center;
