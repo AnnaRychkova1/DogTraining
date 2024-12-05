@@ -2,13 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="images/header-footer/favicon.png"
-    />
+    <link rel="icon" type="image/svg+xml" href="images/main/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>We offer</title>
+    <title>I offer</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap styles -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -18,12 +21,19 @@
     />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/we-offer.css" />
   </head>
   <body>
-    <header class="my-header d-flex p-4 justify-content-between">
+    <header class="my-header d-flex justify-content-between">
       <div>
         <a href="index.html">
-          <img src="images/header-footer/favicon.png" alt="logo" width="56" />
+          <img
+            src="images/header-footer/logo.png"
+            class="logo-img"
+            alt="logo"
+            width="156"
+            height="156"
+          />
         </a>
       </div>
       <nav class="navbar navbar-expand-lg d-flex justify-content-center">
@@ -44,11 +54,11 @@
             id="navbarSupportedContent"
           >
             <ul
-              class="my-nav-list navbar-nav me-auto mb-2 nav-fill gap-2 p-2 rounded-5"
+              class="my-nav-list navbar-nav me-auto nav-fill gap-3 p-2 rounded-5 mb-0"
             >
               <li class="nav-item">
                 <a
-                  class="nav-link rounded-5 px-5 py-2 fw-bold"
+                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
                   aria-current="page"
                   href="index.html"
                   >Home</a
@@ -56,30 +66,30 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="active nav-link rounded-5 px-5 py-2 fw-bold"
+                  class="active nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
                   href="we-offer.html"
-                  >We offer</a
+                  >Services I Offer</a
                 >
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link rounded-5 px-5 py-2 fw-bold"
-                  href="breeds.html"
+                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
+                  href="testimonials.html"
                 >
-                  Breeds
+                  Testimonials
                 </a>
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link rounded-5 px-5 py-2 fw-bold"
+                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
                   href="about.html"
                 >
-                  About us
+                  About me
                 </a>
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link rounded-5 px-5 py-2 fw-bold"
+                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
                   href="contacts.html"
                 >
                   Contacts
@@ -90,23 +100,115 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h2>We offer page</h2>
-      <!-- you create your page here -->
+    <main class="offer-container">
+      <h2 class="we-offer-title">Services I Offer</h2>
+      <section class="offer-section">
+        <p>
+          At Attaboy Dog Training, I know that every dog is different. Whether you’ve got a lively pup learning the basics, a teenager pushing boundaries, or an older dog needing a fresh approach to tackle bad habits, I’m here to help. Together, we’ll come up with the perfect training plan for you and your dog.
+        </p>
+      </section>
+    
+      <section class="offer-section">
+        <h3 class="offer-subtitle">Puppy Training</h3>
+        <p>
+          I have the perfect four-week basic obedience course for puppies under six months. This will take place in your home and surrounding area once a week for four weeks. Each session will be 60-90mins.
+        </p>
+        <p>The pup will learn:</p>
+        <ul>
+          <li>Focus & Attention</li>
+          <li>Go to “Bed”</li>
+          <li>Sit – Down – Stay</li>
+          <li>Recall</li>
+          <li>Leave it</li>
+          <li>Leash manners</li>
+        </ul>
+        <p>
+          We will teach calm around food and stomp out bad behaviours like nipping, jumping and whining. We will discuss best practices on socialisation, crate training and tackle any potty training issues.
+        </p>
+      </section>
+    
+      <section class="offer-section">
+        <h3 class="offer-subtitle">Basic Obedience Training</h3>
+        <p>
+          Suitable for dogs of all ages, this programme covers essential commands and lays the groundwork for a well-behaved family dog.
+        </p>
+        <p>Features Include:</p>
+        <ul>
+          <li>Teaching proper leash manners and loose-lead walking.</li>
+          <li>Reliable recall techniques for better off-lead control.</li>
+          <li>Sit, stay, down, and leave-it commands.</li>
+          <li>Tackling nuisance behaviours like jumping, barking, and chewing.</li>
+        </ul>
+        <p>
+          Tailored to fit your lifestyle, we work in your home and around the area at a time that suits you.
+        </p>
+      </section>
+    
+      <section class="offer-section">
+        <h3 class="offer-subtitle">Behaviour Modification</h3>
+        <p>
+          I help dogs overcome reactivity, anxiety, or problem behaviours with one-to-one personalised plans.
+        </p>
+        <p>Features Include:</p>
+        <ul>
+          <li>In-depth assessments to get to the root of the problem.</li>
+          <li>Training strategies to reduce reactivity and build confidence.</li>
+          <li>Desensitisation techniques for triggers like noises or other dogs.</li>
+          <li>Step-by-step support to create lasting behavioural change.</li>
+          <li>Ongoing guidance to track progress and adjust as needed.</li>
+        </ul>
+      </section>
+    
+      <section class="offer-section">
+        <h3 class="offer-subtitle">Find Out How I Can Help You</h3>
+        <p>
+          Book a free phone consultation to tell me more about your dog! This is the best way for us to create a personalised plan that suits your dog’s unique needs. Get in touch today to get started!
+        </p>
+      </section>
     </main>
+    
     <footer class="my-footer p-4">
-      <!-- here will be your footer -->
-      <p>Follow us</p>
+      <div class="footer-left">
+        <a
+          href="https://www.instagram.com/attaboy_dogtraining/"
+          class="instagram-link"
+          target="_blank"
+          rel="nofollow"
+        >
+          <img
+            src="images/header-footer/Instagram_icon.png"
+            alt="Instagram link"
+            width="64px"
+          />
+        </a>
+      </div>
+      <div class="footer-right">
+        <ul class="footer-list">
+          <a href="testimonials.html" class="footer-link">Testimonials</a>
+          <a href="we-offer.html" class="footer-link">Services I Offer</a>
+          <a href="contacts.html" class="footer-link">Contact me</a>
+          <a href="about.html" class="footer-link">About me</a>
+        </ul>
+        <div>
+          <span> &copy; 2024 Attaboy Dog Training. All rights reserved. </span>
+        </div>
+      </div>
     </footer>
     <!-- Scroll to top button -->
     <button
       type="button"
       id="scrollTopBtn"
       title="Go to top"
-      class="btn fs-2 fw-bold px-4 py-2 border-0 rounded-circle"
+      class="btn fw-bold border-0 rounded-circle"
     >
       &uarr;
     </button>
+    <!-- JQuery script -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap script js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -115,5 +217,6 @@
     ></script>
     <!-- Custom js -->
     <script defer src="js/index.js"></script>
+    <script defer src="js/we-offer.js"></script>
   </body>
 </html>

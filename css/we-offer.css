@@ -1,0 +1,42 @@
+/* We Offer Page Styles */
+.offer-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.we-offer-title {
+  color: #5b81a6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.offer-section {
+  margin-bottom: 2rem;
+}
+
+.offer-subtitle {
+  color: #f65451;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.offer-section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.offer-section ul {
+  list-style-type: disc;
+  margin-left: 2rem;
+  text-align: justify;
+}
+
+.offer-section ul li {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}

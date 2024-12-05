@@ -1,0 +1,75 @@
+/* About Me container: handles the overall section layout */
+.about-container {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* About Me title: styles the title text */
+.about-title {
+  color: #5b81a6;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* About content: flexbox layout for the image and text */
+.about-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* Image styling: ensures the image is positioned and styled correctly */
+.about-image {
+  flex: 0 0 30%;
+  margin-right: auto;
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+/* Text block styling: adjusts the alignment and spacing of text */
+.about-text {
+  flex: 1;
+  text-align: left;
+  line-height: 1.6;
+  color: #333;
+  text-align: justify;
+}
+
+.about-subtitle {
+  color: #f65451;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive design: adjusts layout for smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image {
+    margin: 0 auto 1.5rem auto;
+    width: 80%;
+  }
+
+  .about-text {
+    text-align: justify;
+  }
+}
