@@ -25,6 +25,7 @@
     />
     <!-- Custom styles -->
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/contacts.css" />
   </head>
   <body>
     <header class="my-header d-flex justify-content-between">
@@ -103,8 +104,125 @@
       </nav>
     </header>
     <main>
-      <h2>Contacts page</h2>
-      <!-- you create your page here -->
+      <div class="container mt-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <form id="contactForm" class="needs-validation" novalidate>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="firstName"
+                placeholder="Enter your first name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid first name.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="lastName"
+                placeholder="Enter your last name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid last name.
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="dogName" class="form-label">Dog's Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="dogName"
+                placeholder="Enter dog's name"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid dog's name.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="dogBreed" class="form-label">Dog's Breed</label>
+              <input
+                type="text"
+                class="form-control"
+                id="dogBreed"
+                placeholder="Enter dog's breed"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid dog breed.
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="dogAge" class="form-label">Dog's Age</label>
+              <input
+                type="number"
+                class="form-control"
+                id="dogAge"
+                placeholder="Enter dog's age (in years)"
+                min="0"
+                max="20"
+                required
+              />
+              <div class="invalid-feedback">
+                Dog's age must be between 0 and 20 years.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="phoneNumber" class="form-label">Phone Number</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phoneNumber"
+                placeholder="Enter your phone number"
+                required
+              />
+              <div class="invalid-feedback">
+                Please enter a valid phone number.
+              </div>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary px-5">Submit</button>
+          </div>
+        </form>
+        <div class="mt-4 text-center">
+          <p>
+            You can also contact us via Instagram or phone:
+            <a
+              href="https://www.instagram.com/attaboy_dogtraining/"
+              target="_blank"
+              >Instagram</a
+            >
+            |
+            <a href="tel:+353892188141">+353 (89) 218 8141</a>
+          </p>
+        </div>
+      </div>
     </main>
     <footer class="my-footer p-4">
       <div class="footer-left">
@@ -161,5 +279,6 @@
     ></script>
     <!-- Custom js -->
     <script defer src="js/index.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>

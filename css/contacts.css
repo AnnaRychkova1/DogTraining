@@ -1,0 +1,18 @@
+.form-control.is-invalid {
+    border-color: red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+.form-control.is-valid {
+    border-color: green;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.invalid-feedback {
+    display: none;
+    color: red;
+}
+
+.form-control.is-invalid ~ .invalid-feedback {
+    display: block;
+}
