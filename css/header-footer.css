@@ -63,11 +63,14 @@
 }
 
 .my-footer {
+  background-color: var(--dark-background);
+  color: var(--light-background);
+}
+
+.my-footer-container {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  background-color: var(--dark-background);
-  color: var(--light-background);
 }
 
 .instagram-link {
@@ -97,7 +100,7 @@
 }
 
 .footer-link {
-  color: var(--main-text-color);
+  color: black;
   font-size: 1.25rem;
   transition: var(--animation);
 }
@@ -110,7 +113,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .my-footer {
+  .my-footer-container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

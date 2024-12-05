@@ -1,372 +1,363 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Playfair+Display&display=swap");
 
 .main-banner-block {
-
-    display: flex;
-    justify-content: space-between; /* Can be used to align blocks at the edges */
-    position: relative;
-    background-color: white;
-    height: 300px;
+  display: flex;
+  justify-content: space-between; /* Can be used to align blocks at the edges */
+  position: relative;
+  background-color: var(--white-text-color);
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 a {
-    text-decoration: none
+  text-decoration: none;
 }
 
 .background-video-we-offer {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .background-video-reviews {
-    display: block; /* The video is visible by default */
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-
+  display: block; /* The video is visible by default */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .background-video-contacts {
-    display: block; /* The video is visible by default*/
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+  display: block; /* The video is visible by default*/
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
-    z-index: 2;
-    pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Translucent black */
+  z-index: 2;
+  pointer-events: none;
 }
 
 .block-we-offer {
-    flex: 1; /* Each block will take the same width */
-    text-align: center; /* Alignment of text in the center */
-    background-color: lightgray; /* An example of a background for blocks */
-    border: black solid 1px;
+  flex: 1; /* Each block will take the same width */
+  text-align: center; /* Alignment of text in the center */
+  background-color: lightgray; /* An example of a background for blocks */
+  border: black solid 1px;
 }
 
 .block-reviews {
-    flex: 1; /* Each block will take the same width */
-    text-align: center; /* Alignment of text in the center */
-    background-color: lightgray; /* An example of a background for blocks */
-    border: black solid 1px;
+  flex: 1; /* Each block will take the same width */
+  text-align: center; /* Alignment of text in the center */
+  background-color: lightgray; /* An example of a background for blocks */
+  border: black solid 1px;
 }
 
 .block-contacts {
-    flex: 1; /* Each block will take the same width */
-    text-align: center; /* Alignment of text in the center */
-    background-color: lightgray; /* An example of a background for blocks */
-    border: black solid 1px;
+  flex: 1; /* Each block will take the same width */
+  text-align: center; /* Alignment of text in the center */
+  background-color: lightgray; /* An example of a background for blocks */
+  border: black solid 1px;
 }
 
 .overlay-text1 {
-    position: relative;
-    bottom: 200px;
-    z-index: 3;
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    pointer-events: none;
-    right: 15px;
+  position: relative;
+  bottom: 200px;
+  z-index: 3;
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+  right: 15px;
 }
 
 .overlay-text1 ol {
-    list-style-type: none;
-    line-height: 3;
+  list-style-type: none;
+  line-height: 3;
 }
 
 .overlay-text1 ol li {
-    left: 10px;
+  left: 10px;
 }
 
 .see-more-link-text {
-    font-size: 20px;
-    color: #f1c527;
+  font-size: 20px;
+  color: #f1c527;
 }
 
 .overlay-text2 {
-    position: relative;
-    bottom: 200px;
-    z-index: 3;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    pointer-events: none;
+  position: relative;
+  bottom: 200px;
+  z-index: 3;
+  color: var(--white-text-color);
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
 }
 
 .overlay-text2 ol {
-    list-style-type: none;
-    line-height: 3;
+  list-style-type: none;
+  line-height: 3;
 }
 
 .overlay-text2 ol li {
-    left: 10px;
+  left: 10px;
 }
 
 .see-more-link-text {
-    font-size: 20px;
-    color: #f1c527;
+  font-size: 20px;
+  color: var(--accent-color);
 }
 
-
 .overlay-text3 {
-    position: relative;
-    bottom: 200px;
-    z-index: 3;
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-    pointer-events: none;
+  position: relative;
+  bottom: 200px;
+  z-index: 3;
+  color: var(--white-text-color);
+  text-align: center;
+  font-size: 2rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
 }
 
 .overlay-text3 ol {
-    list-style-type: none;
-    line-height: 3;
+  list-style-type: none;
+  line-height: 3;
 }
 
 .overlay-text3 ol li {
-    left: 10px;
+  left: 10px;
 }
 
 .see-more-link-text {
-    font-size: 20px;
-    color: #f1c527;
+  font-size: 20px;
+  color: var(--accent-color);
 }
 
 .arrow-container {
-    background-image: url("../images/index_dog_banner/main-banner2.png");
-    background-position: right;
-    background-repeat: no-repeat;
+  background-image: url("../images/index_dog_banner/main-banner2.png");
+  background-position: right;
+  background-repeat: no-repeat;
 
-    height: 720px;
-    background-size: 100%;
+  height: 720px;
+  background-size: 100%;
 
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    background-color: #808080;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: #808080;
 
-    mask-image: linear-gradient(to bottom,
-    rgba(0, 0, 0, 0) 0%, /* Upper transparency */ rgba(0, 0, 0, 1) 20%) /* A fully visible center */;
+  mask-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      /* Upper transparency */ rgba(0, 0, 0, 1) 20%
+    )
+    /* A fully visible center */;
 }
 
-
 .test-image {
-    position: relative;
+  position: relative;
 }
 
 .main-banner {
-
-    width: 380px;
-    height: auto;
-    transition: transform 0.3s ease, clip-path 0.3s ease;
-    margin-left: 220px;
+  width: 380px;
+  height: auto;
+  transition: transform 0.3s ease, clip-path 0.3s ease;
+  margin-left: 220px;
 }
 
 .slide img {
-    position: relative;
-    width: 400px;
+  position: relative;
+  width: 400px;
 }
 
-
-.test-image, .arrow-container {
-    position: relative;
+.test-image,
+.arrow-container {
+  position: relative;
 }
 
 .bubble:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 10px 0 10px 37px;
-    border-color: transparent #e5e2e2;
-    display: block;
-    width: 0;
-    z-index: 1;
-    right: -37px;
-    top: 51px;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 10px 0 10px 37px;
+  border-color: transparent #e5e2e2;
+  display: block;
+  width: 0;
+  z-index: 1;
+  right: -37px;
+  top: 51px;
 }
 
 .bubble:before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 17px 0 17px 44px;
-    border-color: transparent #D6D2D2;
-    display: block;
-    width: 0;
-    z-index: 0;
-    right: -52px;
-    top: 44px;
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 0 17px 44px;
+  border-color: transparent #d6d2d2;
+  display: block;
+  width: 0;
+  z-index: 0;
+  right: -52px;
+  top: 44px;
 }
 
 .arrow-div {
-    text-align: center; /* We centering the entire text */
-    position: relative;
-    top: 120px;
-    left: -175px;
+  text-align: center; /* We centering the entire text */
+  position: relative;
+  top: 120px;
+  left: -175px;
 }
 
 .arrow-div h3 {
-    font-size: 1.5rem; /* Smaller size for subtitle */
-    color: #FF8C00; /* Bright orange color for subtitle*/
-    letter-spacing: 1px;
-    font-weight: 400; /* Lightweight */
-    margin: 0;
-    padding-top: 30px; /* Add the indentation from above */
+  font-size: 1.5rem; /* Smaller size for subtitle */
+  color: var(--accent-color);
+  letter-spacing: 1px;
+  font-weight: 400; /* Lightweight */
+  margin: 0;
+  padding-top: 30px; /* Add the indentation from above */
 }
 
 .arrow-div h1 {
-    font-size: 3.5rem; /* Large size for headlines */
-    color: #2E3A59; /* Dark blue color for headlines */
-    font-family: 'Playfair Display', serif; /* Classic font style */
-    font-weight: bold;
-    margin: 0;
+  font-size: 3.5rem; /* Large size for headlines */
+  color: var(--blue-text-color);
+  font-family: "Playfair Display", serif; /* Classic font style */
+  font-weight: bold;
+  margin: 0;
 }
 
 .arrow-div h2 {
-    font-size: 3.5rem; /* Large size for headlines */
-    color: #2E3A59; /* Dark blue color for headlines */
-    font-family: 'Playfair Display', serif; /* Classic font style */
-    font-weight: bold;
-    margin: 0;
-    padding-bottom: 20px; /* from below*/
+  font-size: 3.5rem; /* Large size for headlines */
+  color: var(--blue-text-color); /* Dark blue color for headlines */
+  font-family: "Playfair Display", serif; /* Classic font style */
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 20px; /* from below*/
 }
 
 .arrow-image {
-    display: block;
-    margin-top: 350px; /* We centering the arrow and give the deroga from above */
-    margin-left: -180px;
-    width: 65px;
+  display: block;
+  margin-top: 350px; /* We centering the arrow and give the deroga from above */
+  margin-left: -180px;
+  width: 65px;
 }
 
 /* When the picture is inside the block, we hide the part that comes out */
-.main-banner-block:hover .main-banner {
-    transform: scale(1.05); /* Increase the picture */
-}
-
-
-/*!**!*/
-/*.test-image:hover .main-banner {*/
-/*    !*clip-path: inset(0 0 100px 0);*/
-/*}*/
-
+/* .main-banner-block:hover .main-banner {
+  transform: scale(1.05); 
+} */
 
 .introduction {
-    width: 50%; /* We set the width of the text part */
-    padding-right: 20px; /* A little retreat on the right, so that it does not fit too close*/
-    font-size: 1.2rem;
-    color: #333;
-    margin-top: 20px;
-    line-height: 1.6;
+  width: 50%; /* We set the width of the text part */
+  padding-right: 20px; /* A little retreat on the right, so that it does not fit too close*/
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 20px;
+  line-height: 1.6;
 }
 
 .read_more {
-    width: 140px;
-    height: 40px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex; /*  flexbox */
-    justify-content: center; /*Horizontal text alignment*/
-    align-items: center;
-    text-align: center;
-    background-color: transparent;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 30px;
+  width: 140px;
+  height: 40px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex; /*  flexbox */
+  justify-content: center; /*Horizontal text alignment*/
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  transition: var(--animation);
+  margin-top: 30px;
 }
 
 .read_more:hover {
-    background-color: cadetblue;
-    color: white;
-    cursor: pointer;
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+  cursor: pointer;
 }
 
-
 .introduction-slider-review {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
-    padding: 0 50px;
-    background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0 50px; */
+  background-color: var(--light-background);
 }
 
 .slider-container {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: 50px auto;
-    overflow: hidden;
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto;
+  overflow: hidden;
 }
 
 .slider {
-    display: flex;
-    transition: transform 0.3s ease-in-out;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
 }
 
 .slide {
-    min-width: 100%;
-    transition: transform 0.3s ease-in-out;
+  min-width: 100%;
+  transition: transform 0.3s ease-in-out;
 }
 
 .slide img {
-    width: 100%;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
 }
 
 .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--white-text-color);
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .arrow.left {
-    left: 10px;
+  left: 10px;
 }
 
 .arrow.right {
-    right: 10px;
+  right: 10px;
 }
 
 .arrow img {
-    width: 25px;
+  width: 25px;
 }
 
 .see_more {
-    width: 140px;
-    height: 40px;
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: transparent;
-    transition: background-color 0.3s, color 0.3s;
-    margin-top: 30px;
-    margin-left: 220px;
+  width: 140px;
+  height: 40px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 30px;
+  margin-left: 220px;
 }
 
 .see_more:hover {
-    background-color: cadetblue;
-    color: white;
-    cursor: pointer;
+  background-color: var(--accent-color);
+  color: white;
+  cursor: pointer;
 }
-
