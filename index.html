@@ -28,12 +28,12 @@
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <header class="my-header">
+    <header class="my-header home-header">
       <div class="container d-flex justify-content-between">
         <div class="logo-container">
           <a href="index.html">
             <img
-              src="images/header-footer/logo.png"
+              src="images/header-footer/logo1.png"
               class="logo-img"
               alt="Logo Attaboy Dog Training"
               loading="lazy"
@@ -43,7 +43,7 @@
         <nav class="navbar navbar-expand-lg d-flex justify-content-center">
           <div class="container-fluid d-flex justify-content-end">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler home-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -105,24 +105,23 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main class="home-main">
       <section>
-        <div class="container">
-          <div class="arrow-container">
-            <div class="arrow-div">
-              <a href="#section1"
-                ><img
-                  class="arrow-image"
-                  src="images/home/arrow-down.png"
-                  alt=""
-              /></a>
-            </div>
+        <div class="arrow-container">
+          <div class="arrow-div">
+            <a href="#introduction"
+              ><img
+                class="arrow-image"
+                src="images/home/arrow-down.png"
+                alt="Arrow down"
+            /></a>
           </div>
         </div>
       </section>
       <section>
-        <div class="container main-banner-block">
-          <div class="block-we-offer">
+        <div class="home-videos-block">
+          <div class="overlay"></div>
+          <div class="block-we-offer home-video">
             <a href="we-offer.html">
               <video
                 class="background-video-we-offer"
@@ -130,35 +129,32 @@
                 preload="auto"
                 loop
               >
-                <source src="images/home/dogVideo1.mp4" type="video/mp4" />
+                <source src="videos/home/dogVideo1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </a>
-            <div class="overlay"></div>
-            <!-- The darkening layer -->
-            <div class="overlay-text1">
+            <div class="overlay-text">
               <ol>
                 <li>Services I Offer</li>
                 <li class="see-more-link-text">See more</li>
               </ol>
             </div>
           </div>
-          <div class="block-reviews">
+          <div class="block-reviews home-video">
             <a href="testimonials.html">
               <video class="background-video-reviews" muted preload="auto" loop>
-                <source src="images/home/dogVideo2.mp4" type="video/mp4" />
+                <source src="videos/home/dogVideo2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-                <div class="overlay"></div>
               </video>
             </a>
-            <div class="overlay-text2">
+            <div class="overlay-text">
               <ol>
                 <li>Testimonials</li>
                 <li class="see-more-link-text">See more</li>
               </ol>
             </div>
           </div>
-          <div class="block-contacts">
+          <div class="block-contacts home-video">
             <a href="contacts.html">
               <video
                 class="background-video-contacts"
@@ -166,13 +162,11 @@
                 preload="auto"
                 loop
               >
-                <source src="images/home/dogVideo3.mp4" type="video/mp4" />
+                <source src="videos/home/dogVideo3.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
-                <div class="overlay"></div>
-                <!-- The darkening layer -->
               </video>
             </a>
-            <div class="overlay-text3">
+            <div class="overlay-text">
               <ol>
                 <li>Contacts</li>
                 <li class="see-more-link-text">See more</li>
@@ -181,13 +175,13 @@
           </div>
         </div>
       </section>
-      <section>
-        <div class="container introduction-slider-review">
+      <section class="introduction-section">
+        <div class="container introduction-container">
           <!--introduction-slider-review-->
-          <div class="introduction">
+          <div class="introduction col-12 col-lg-6" id="introduction">
             <h2>Welcome</h2>
-            <span
-              >Hi, my name is Mattias.<br />
+            <p>
+              Hi, my name is Mattias.<br />
               My journey into dog training began when I rescued my dog, Naoise,
               from the Bronx in New York City. She came into my life with her
               fair share of challenges, but through patience, understanding, and
@@ -201,35 +195,42 @@
               trainers in New York and volunteered with animal shelters across
               the city, gaining valuable hands-on experience with dogs of all
               shapes, sizes, and temperaments.
-            </span>
-            <a href="about.html">
-              <span class="read_more">READ MORE</span>
-            </a>
+            </p>
+            <div class="d-flex justify-content-center mt-3">
+              <a href="about.html">
+                <span class="read-more">READ MORE</span>
+              </a>
+            </div>
           </div>
-          <div class="slider-container">
-            <div class="slider">
-              <div class="slide">
-                <img src="images/home/rew2.jpg" alt="Image 1" />
+          <div class="slider-side-container col-12 col-lg-6">
+            <h2>Testimonials</h2>
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img src="images/home/rew2.jpg" alt="Image 1" />
+                </div>
+                <div class="slide">
+                  <img src="images/home/rew3.jpg" alt="Image 2" />
+                </div>
+                <div class="slide">
+                  <img src="images/home/rew4.jpg" alt="Image 3" />
+                </div>
+                <div class="slide">
+                  <img src="images/home/rew5.jpg" alt="Image 4" />
+                </div>
               </div>
-              <div class="slide">
-                <img src="images/home/rew3.jpg" alt="Image 2" />
+              <div class="arrow left">
+                <img src="images/home/left.png" alt="Previous picture" />
               </div>
-              <div class="slide">
-                <img src="images/home/rew4.jpg" alt="Image 3" />
-              </div>
-              <div class="slide">
-                <img src="images/home/rew5.jpg" alt="Image 4" />
+              <div class="arrow right">
+                <img src="images/home/next.png" alt="Next picture" />
               </div>
             </div>
-            <div class="arrow left">
-              <img src="images/home/left.png" alt="" />
+            <div class="d-flex justify-content-center mt-3">
+              <a href="testimonials.html">
+                <span class="see-more">SEE MORE</span>
+              </a>
             </div>
-            <div class="arrow right">
-              <img src="images/home/next(1).png" alt="" />
-            </div>
-            <a href="testimonials.html">
-              <span class="see_more">SEE MORE</span>
-            </a>
           </div>
         </div>
       </section>

@@ -61,9 +61,22 @@
   color: var(--blue-text-color);
   font-weight: bold;
   transition: var(--animation);
+  display: block;
+  margin-bottom: 5px;
 }
 
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+
+@media only screen and (min-width: 992px) {
+  .contact-link {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .contact-link:last-child {
+    margin-right: 0;
+  }
 }

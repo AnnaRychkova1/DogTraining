@@ -9,16 +9,16 @@
 }
 
 .logo-container {
-  padding-left: 1.5rem;
+  padding-left: 0.5rem;
 }
 
 .logo-img {
-  width: 100px;
-  height: 100px;
+  width: 68px;
+  height: 68px;
 }
 
 .navbar {
-  padding: 1.5rem;
+  padding: 0.8rem;
 }
 
 #navbarSupportedContent {
@@ -112,6 +112,21 @@
   text-shadow: 2px 2px 4px rgba(194, 205, 238, 0.9);
 }
 
+@media only screen and (min-width: 576px) {
+  .logo-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  .footer-right {
+    padding-right: 12px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .my-footer-container {
     flex-direction: row;
@@ -122,10 +137,7 @@
   .footer-right {
     gap: 24px;
     align-items: flex-end;
-  }
-
-  .footer-right {
-    padding-right: 84px;
+    padding-right: 44px;
   }
 
   .footer-list {
@@ -145,6 +157,12 @@
 
   .navbar-nav {
     background-color: transparent;
+  }
+
+  .footer-right {
+    gap: 24px;
+    align-items: flex-end;
+    padding-right: 84px;
   }
 
   .footer-list {
