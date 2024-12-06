@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 
 .we-offer-title {
@@ -10,10 +11,6 @@
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: bold;
-}
-
-.offer-section {
-  margin-bottom: 2rem;
 }
 
 .offer-subtitle {
@@ -25,8 +22,7 @@
 }
 
 .offer-section p {
-  font-size: 1.2rem;
-  line-height: 1.6;
+  margin-bottom: 0;
   text-align: justify;
 }
 
@@ -34,9 +30,9 @@
   list-style-type: disc;
   margin-left: 2rem;
   text-align: justify;
+  margin-bottom: 0;
 }
 
 .offer-section ul li {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
+  margin-bottom: 0;
 }

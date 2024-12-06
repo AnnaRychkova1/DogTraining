@@ -28,217 +28,246 @@
     <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
-    <header class="my-header d-flex justify-content-between">
-      <div class="logo-container">
-        <a href="index.html">
-          <img
-            src="images/header-footer/logo.png"
-            class="logo-img"
-            alt="Logo Attaboy Dog Training"
-            loading="lazy"
-          />
-        </a>
-      </div>
-      <nav class="navbar navbar-expand-lg d-flex justify-content-center">
-        <div class="container-fluid d-flex justify-content-end">
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse fs-5"
-            id="navbarSupportedContent"
-          >
-            <ul
-              class="my-nav-list navbar-nav me-auto nav-fill gap-3 p-2 rounded-5 mb-0"
+    <header class="my-header home-header">
+      <div class="container d-flex justify-content-between">
+        <div class="logo-container">
+          <a href="index.html">
+            <img
+              src="images/header-footer/logo1.png"
+              class="logo-img"
+              alt="Logo Attaboy Dog Training"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <nav class="navbar navbar-expand-lg d-flex justify-content-center">
+          <div class="container-fluid d-flex justify-content-end">
+            <button
+              class="navbar-toggler home-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <li class="nav-item">
-                <a
-                  class="active nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
-                  aria-current="page"
-                  href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
-                  href="we-offer.html"
-                  >Services I Offer</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
-                  href="testimonials.html"
-                >
-                  Testimonials
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
-                  href="about.html"
-                >
-                  About me
-                </a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link rounded-5 px-5 py-2 fw-bold"
-                  href="contacts.html"
-                >
-                  Contacts
-                </a>
-              </li>
-            </ul>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse fs-5"
+              id="navbarSupportedContent"
+            >
+              <ul
+                class="my-nav-list navbar-nav me-auto nav-fill gap-3 p-2 rounded-5 mb-0"
+              >
+                <li class="nav-item">
+                  <a
+                    class="active nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
+                    href="we-offer.html"
+                    >Services I Offer</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
+                    href="testimonials.html"
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
+                    href="about.html"
+                  >
+                    About me
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link rounded-5 px-3 px-xl-4 py-2 fw-bold"
+                    href="contacts.html"
+                  >
+                    Contacts
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
-    <main>
-      <div class="arrow-container">
-        <div class="arrow-div">
-          <a href="#section1"
-            ><img class="arrow-image" src="images/home/arrow-down.png" alt=""
-          /></a>
+    <main class="home-main">
+      <section>
+        <div class="arrow-container">
+          <div class="arrow-div">
+            <a href="#introduction"
+              ><img
+                class="arrow-image"
+                src="images/home/arrow-down.png"
+                alt="Arrow down"
+            /></a>
+          </div>
         </div>
-      </div>
-      <div class="main-banner-block" id="section1">
-        <div class="block-we-offer">
-          <a href="we-offer.html">
-            <video class="background-video-we-offer" muted preload="auto" loop>
-              <source src="images/home/dogVideo1.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </a>
+      </section>
+      <section>
+        <div class="home-videos-block">
           <div class="overlay"></div>
-          <!-- The darkening layer -->
-          <div class="overlay-text1">
-            <ol>
-              <li>Services I Offer</li>
-              <li class="see-more-link-text">See more</li>
-            </ol>
+          <div class="block-we-offer home-video">
+            <a href="we-offer.html">
+              <video
+                class="background-video-we-offer"
+                muted
+                preload="auto"
+                loop
+              >
+                <source src="videos/home/dogVideo1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="overlay-text">
+              <ol>
+                <li>Services I Offer</li>
+                <li class="see-more-link-text">See more</li>
+              </ol>
+            </div>
+          </div>
+          <div class="block-reviews home-video">
+            <a href="testimonials.html">
+              <video class="background-video-reviews" muted preload="auto" loop>
+                <source src="videos/home/dogVideo2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="overlay-text">
+              <ol>
+                <li>Testimonials</li>
+                <li class="see-more-link-text">See more</li>
+              </ol>
+            </div>
+          </div>
+          <div class="block-contacts home-video">
+            <a href="contacts.html">
+              <video
+                class="background-video-contacts"
+                muted
+                preload="auto"
+                loop
+              >
+                <source src="videos/home/dogVideo3.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </a>
+            <div class="overlay-text">
+              <ol>
+                <li>Contacts</li>
+                <li class="see-more-link-text">See more</li>
+              </ol>
+            </div>
           </div>
         </div>
-        <div class="block-reviews">
-          <a href="testimonials.html">
-            <video class="background-video-reviews" muted preload="auto" loop>
-              <source src="images/home/dogVideo2.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              <div class="overlay"></div>
-            </video>
-          </a>
-          <div class="overlay-text2">
-            <ol>
-              <li>Testimonials</li>
-              <li class="see-more-link-text">See more</li>
-            </ol>
-          </div>
-        </div>
-        <div class="block-contacts">
-          <a href="contacts.html">
-            <video class="background-video-contacts" muted preload="auto" loop>
-              <source src="images/home/dogVideo3.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-              <div class="overlay"></div>
-              <!-- The darkening layer -->
-            </video>
-          </a>
-          <div class="overlay-text3">
-            <ol>
-              <li>Contacts</li>
-              <li class="see-more-link-text">See more</li>
-            </ol>
-          </div>
-        </div>
-      </div>
-      <div class="introduction-slider-review" id="section2">
-        <!--introduction-slider-review-->
-        <div class="introduction">
-          <h2>Welcome</h2>
-          <span
-            >Hi, my name is Mattias.<br />
-            My journey into dog training began when I rescued my dog, Naoise,
-            from the Bronx in New York City. She came into my life with her fair
-            share of challenges, but through patience, understanding, and proper
-            training, we built a strong bond. This experience sparked my passion
-            for helping dogs and their owners find the same connection.<br />
+      </section>
+      <section class="introduction-section">
+        <div class="container introduction-container">
+          <!--introduction-slider-review-->
+          <div class="introduction col-12 col-lg-6" id="introduction">
+            <h2>Welcome</h2>
+            <p>
+              Hi, my name is Mattias.<br />
+              My journey into dog training began when I rescued my dog, Naoise,
+              from the Bronx in New York City. She came into my life with her
+              fair share of challenges, but through patience, understanding, and
+              proper training, we built a strong bond. This experience sparked
+              my passion for helping dogs and their owners find the same
+              connection.<br />
 
-            To follow this path, I enrolled in the Animal Behaviour College,
-            where I gained a solid foundation in understanding and training
-            dogs. Over the years, I've worked alongside some of the best dog
-            trainers in New York and volunteered with animal shelters across the
-            city, gaining valuable hands-on experience with dogs of all shapes,
-            sizes, and temperaments.
-          </span>
-          <a href="about.html">
-            <div class="read_more"><span>READ MORE</span></div>
-          </a>
+              To follow this path, I enrolled in the Animal Behaviour College,
+              where I gained a solid foundation in understanding and training
+              dogs. Over the years, I've worked alongside some of the best dog
+              trainers in New York and volunteered with animal shelters across
+              the city, gaining valuable hands-on experience with dogs of all
+              shapes, sizes, and temperaments.
+            </p>
+            <div class="d-flex justify-content-center mt-3">
+              <a href="about.html">
+                <span class="read-more">READ MORE</span>
+              </a>
+            </div>
+          </div>
+          <div class="slider-side-container col-12 col-lg-6">
+            <h2>Testimonials</h2>
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slide">
+                  <img src="images/home/rew2.jpg" alt="Image 1" />
+                </div>
+                <div class="slide">
+                  <img src="images/home/rew3.jpg" alt="Image 2" />
+                </div>
+                <div class="slide">
+                  <img src="images/home/rew4.jpg" alt="Image 3" />
+                </div>
+                <div class="slide">
+                  <img src="images/home/rew5.jpg" alt="Image 4" />
+                </div>
+              </div>
+              <div class="arrow left">
+                <img src="images/home/left.png" alt="Previous picture" />
+              </div>
+              <div class="arrow right">
+                <img src="images/home/next.png" alt="Next picture" />
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mt-3">
+              <a href="testimonials.html">
+                <span class="see-more">SEE MORE</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="slider-container">
-          <div class="slider">
-            <div class="slide">
-              <img src="images/home/rew2.jpg" alt="Image 1" />
-            </div>
-            <div class="slide">
-              <img src="images/home/rew3.jpg" alt="Image 2" />
-            </div>
-            <div class="slide">
-              <img src="images/home/rew4.jpg" alt="Image 3" />
-            </div>
-            <div class="slide">
-              <img src="images/home/rew5.jpg" alt="Image 4" />
-            </div>
-          </div>
-          <div class="arrow left">
-            <img src="images/home/left.png" alt="" />
-          </div>
-          <div class="arrow right">
-            <img src="images/home/next(1).png" alt="" />
-          </div>
-          <a href="breeds.html">
-            <div class="see_more"><span>SEE MORE</span></div>
-          </a>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="my-footer p-4">
-      <div class="footer-left">
-        <a
-          href="https://www.instagram.com/attaboy_dogtraining/"
-          class="instagram-link"
-          target="_blank"
-          rel="nofollow"
-        >
-          <img
-            src="images/header-footer/Instagram_icon.png"
-            alt="Link to Attaboy Dog Training Instagram page"
-            width="64"
-            loading="lazy"
-          />
-        </a>
-      </div>
-      <div class="footer-right">
-        <ul class="footer-list">
-          <li>
-            <a href="testimonials.html" class="footer-link">Testimonials</a>
-          </li>
-          <li>
-            <a href="we-offer.html" class="footer-link">Services I Offer</a>
-          </li>
-          <li><a href="contacts.html" class="footer-link">Contact me</a></li>
-          <li><a href="about.html" class="footer-link">About me</a></li>
-        </ul>
-        <div>
-          <span> &copy; 2024 Attaboy Dog Training. All rights reserved. </span>
+      <div class="container my-footer-container">
+        <div class="footer-left">
+          <a
+            href="https://www.instagram.com/attaboy_dogtraining/"
+            class="instagram-link"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img
+              src="images/header-footer/Instagram_icon.png"
+              alt="Link to Attaboy Dog Training Instagram page"
+              width="64"
+              loading="lazy"
+            />
+          </a>
+        </div>
+        <div class="footer-right">
+          <ul class="footer-list">
+            <li>
+              <a href="testimonials.html" class="footer-link">Testimonials</a>
+            </li>
+            <li>
+              <a href="we-offer.html" class="footer-link">Services I Offer</a>
+            </li>
+            <li><a href="contacts.html" class="footer-link">Contact me</a></li>
+            <li><a href="about.html" class="footer-link">About me</a></li>
+          </ul>
+          <div>
+            <span>
+              &copy; 2024 Attaboy Dog Training. All rights reserved.
+            </span>
+          </div>
         </div>
       </div>
     </footer>

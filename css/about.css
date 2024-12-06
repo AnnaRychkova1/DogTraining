@@ -57,11 +57,6 @@
   margin-top: 0;
 }
 
-.about-text p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-
 /* Responsive design: adjusts layout for bigger screens */
 @media (min-width: 768px) {
   .about-content {
@@ -71,7 +66,7 @@
 
   .about-image {
     flex: 0 0 30%;
-    margin-right: auto;
+    width: 100%;
   }
 
   .about-subtitle {
