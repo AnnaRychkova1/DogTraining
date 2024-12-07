@@ -56,22 +56,33 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto;
+  justify-items: center;
   gap: 0 24px;
 }
 
 .welcom-img-top {
   display: contents;
+  margin: 0 auto;
 }
 
 .welcom-img-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   grid-column: 1 / span 2;
-  width: 66%;
+  width: 68%;
   margin: 0 auto;
 }
 
 .trainer-photo-container {
   border-radius: 50%;
   border: 5px solid var(--light-background);
+  max-width: 250px;
+  max-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   overflow: hidden;
 }
 
