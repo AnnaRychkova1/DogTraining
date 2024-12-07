@@ -1,0 +1,11 @@
+/*  # Headers for all resources
+  Cache-Control: public, max-age=31536000, immutable
+
+/images/*  # For images
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*  # For JavaScript files
+  Cache-Control: public, max-age=86400  # Update every day
+
+/css/*  # For CSS files
+  Cache-Control: public, max-age=86400  # Update every day
