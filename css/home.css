@@ -137,7 +137,6 @@ a {
 .introduction-container {
   position: relative;
   z-index: 1;
-  /* overflow: hidden; */
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -166,7 +165,7 @@ a {
 .read-more,
 .see-more {
   padding: 8px 36px;
-  color: var(--main-text-color);
+  color: black;
   background-color: var(--accent-color);
   transition: var(--animation);
   font-size: 1.25rem;
@@ -175,7 +174,9 @@ a {
 }
 
 .read-more:hover,
-.read-more:focus {
+.read-more:focus,
+.see-more:hover,
+.see-more:focus {
   background-color: var(--hover-color);
 }
 
@@ -230,7 +231,7 @@ a {
 .slide {
   flex: 0 0 100%;
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 .slide img {
@@ -276,12 +277,10 @@ a {
   }
   .slider {
     width: 364px;
-    height: 426px;
   }
 
   .slide img {
     width: 364px;
-    height: 426px;
   }
 }
 

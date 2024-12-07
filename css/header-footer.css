@@ -64,7 +64,7 @@
 
 .my-footer {
   background-color: var(--dark-background);
-  color: var(--light-background);
+  color: var(--white-text-color);
 }
 
 .my-footer-container {
