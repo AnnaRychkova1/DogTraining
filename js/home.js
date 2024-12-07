@@ -43,6 +43,23 @@ videoContainer3.addEventListener("mouseleave", () => {
   video3.currentTime = 0; // Rewind to the first frame
 });
 
+// Global changeSlide function
+function changeSlide(
+  slides,
+  slideElements,
+  currentSlide,
+  withTransition = true
+) {
+  if (withTransition) {
+    slides.style.transition = "transform 0.5s ease-in-out";
+  } else {
+    slides.style.transition = "none"; // Disable animation for instant movement
+  }
+
+  const slideWidth = slideElements[0].offsetWidth;
+  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelector(".slider");
   const slideElements = document.querySelectorAll(".slide");
@@ -60,30 +77,21 @@ document.addEventListener("DOMContentLoaded", function () {
   slides.appendChild(firstClone); // Append a copy of the first slide to the end
   slides.insertBefore(lastClone, slideElements[0]); // Add a copy of the last slide to the beginning
 
-  // Function to change slides
-  function changeSlide(withTransition = true) {
-    if (withTransition) {
-      slides.style.transition = "transform 0.5s ease-in-out";
-    } else {
-      slides.style.transition = "none"; // Disable animation for instant movement
-    }
-
-    const slideWidth = slideElements[0].offsetWidth;
-    slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-  }
+  // Set the initial position (first real slide)
+  changeSlide(slides, slideElements, currentSlide, false);
 
   // Left arrow click event handler
   leftArrow.addEventListener("click", function () {
     if (currentSlide <= 0) return; // If at the start, do nothing
     currentSlide--;
-    changeSlide();
+    changeSlide(slides, slideElements, currentSlide);
   });
 
   // Right arrow click event handler
   rightArrow.addEventListener("click", function () {
     if (currentSlide >= slideCount + 1) return; // If at the end, do nothing
     currentSlide++;
-    changeSlide();
+    changeSlide(slides, slideElements, currentSlide);
   });
 
   // Listen for the end of the transition to make seamless looping
@@ -91,29 +99,25 @@ document.addEventListener("DOMContentLoaded", function () {
     // If we're on the last (cloned first) slide
     if (currentSlide === slideCount + 1) {
       currentSlide = 1; // Jump to the first real slide
-      changeSlide(false); // Move instantly without animation
+      changeSlide(slides, slideElements, currentSlide, false); // Move instantly without animation
     }
 
     // If we're on the first (cloned last) slide
     if (currentSlide === 0) {
       currentSlide = slideCount; // Jump to the last real slide
-      changeSlide(false); // Move instantly without animation
+      changeSlide(slides, slideElements, currentSlide, false); // Move instantly without animation
     }
   });
-
-  // Set the initial position (first real slide)
-  changeSlide(false);
 });
 
 // Recalculate slide position on window resize
 window.addEventListener("resize", function () {
-  changeSlide(); // Call the slide change function on window resize
-});
+  const slides = document.querySelector(".slider");
+  const slideElements = document.querySelectorAll(".slide");
+  const currentSlide = 1; // Start from the first real slide again
 
-function changeSlide() {
-  const slideWidth = slideElements[0].offsetWidth; // Get the width of the first slide
-  slides.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
-}
+  changeSlide(slides, slideElements, currentSlide); // Reposition slides on resize
+});
 
 // Change header style and logo on scroll
 document.addEventListener("scroll", function () {
