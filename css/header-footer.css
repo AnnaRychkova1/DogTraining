@@ -77,6 +77,10 @@
   transition: var(--animation);
 }
 
+.instagram-img {
+  width: 46px;
+}
+
 .instagram-link:hover,
 .instagram-link:focus,
 .instagram-link:focus-visible {
@@ -132,6 +136,10 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .instagram-img {
+    width: 64px;
   }
 
   .footer-right {
